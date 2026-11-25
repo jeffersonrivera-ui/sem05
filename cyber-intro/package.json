@@ -1,0 +1,28 @@
+{
+  "name": "cyber-intro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Introducción cinematográfica: Ciberataques a computadoras personales (Remotion)",
+  "scripts": {
+    "start": "remotion studio",
+    "audio": "python3 scripts/generate_audio.py",
+    "render": "remotion render CyberIntro out/cyber-intro.mp4 --codec=h264 --crf=16 --pixel-format=yuv420p --audio-codec=aac --audio-bitrate=320k",
+    "still": "remotion still CyberIntro out/frame.png --frame=690",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/orbitron": "^5.3.0",
+    "@fontsource/rajdhani": "^5.3.0",
+    "@remotion/cli": "^4.0.547",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.547"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.547",
+    "@remotion/renderer": "^4.0.547",
+    "@types/react": "^19.3.3",
+    "typescript": "^7.0.2"
+  }
+}
